@@ -18,15 +18,24 @@ $menu = Menu::new()
     ->add(Link::to('/login.php', 'Login')
         ->addParentClass('list-group-item')
         ->addClass('list-group-item-action'))
-    //->add(Link::to('#','Mais')
-    //    ->setAttribute('role', 'navigation')
-    //    )
-    //->submenu('More', Menu::new()
-    //    ->add(Link::to('/login.php', 'Login')
-    //        ->addClass('dropdown-item'))
-    //    ->addParentClass('dropdown-menu')
-    //    //->wrap('div', ['class' => 'dropdown-menu'])
-    //    )
+    ->add(Link::to('/cadastrouser.php', 'Cadastrar')
+        ->addParentClass('list-group-item')
+        ->addClass('list-group-item-action'))
+    ->submenu(
+		Link::to('#','Mais')
+			->addClass('dropdown-toggle list-group-item list-group-item-action')
+   		    ->setAttributes(['data-toggle' => 'dropdown',
+	    		'aria-haspopup' => 'true',
+		    	'aria-expanded' => 'false',
+				'role' => 'button']
+				)
+			,
+		Menu::new()
+	        ->addClass('dropdown-menu')
+        	->add(Link::to('/login.php', 'Login')
+            	->addClass('dropdown-item')
+			)
+	    )
     ;
 echo $menu;
  ?>
