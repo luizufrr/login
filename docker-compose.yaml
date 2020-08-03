@@ -4,5 +4,11 @@ services:
     build: .
     ports:
       - "8080:80/tcp"
+    volumes:
+      - .:/var/www/html
 #    command: tail -f /dev/null
-
+  mysql:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    command: tail -f /dev/null
