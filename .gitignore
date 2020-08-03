@@ -1,3 +1,6 @@
 # bibliotecas ( do composer , por exemplo )
 #para baixar as bibliotecas use `composer install`
 /vendor/
+
+# pasta de testes
+/t/
