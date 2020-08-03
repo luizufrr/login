@@ -35,14 +35,7 @@ Windows :
 * `php -S 127.0.0.1:8181`
 * Abra localhost:8181 no browser
 ## Windows
-* Abra o Power Shell no modo administrador
-  * Abra o Power Shell (https://pt.wikihow.com/Executar-o-Powershell)
-  * `Start-Process powershell -Verb runAs` (https://www.it-swarm.dev/pt/powershell/powershell-executando-um-comando-como-administrador/939774586/)
-* `Set-ExecutionPolicy Bypass -Scope Process`
-* Instale Chocolatey para instalar git, php, composer
-  * `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))` (https://chocolatey.org/install)
-* Instale o git (https://git-scm.com/downloads)
-  * `choco install git`
+* Instale o git (https://git-scm.com/downloads) ou baixe esse repositorio e extraia para alguma pasta
 * Instale o php
 * `cd C:`
 * `mkdir github`
@@ -50,10 +43,13 @@ Windows :
 * `mkdir luizufrr`
 * `cd luizufrr`
 * `git clone https://github.com/luizufrr/login.git`
-* `cd login`
+
+Passos 2:
+* Vá para a pasta do projeto / repositorio clonado ou baixado
+  * `cd login`
 * `php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
-* `php composer-setup.php --install-dir=/usr/bin --filename=composer`
-* `compose install`
+* `php composer-setup.php --filename=compose`
+* `php compose install`
 * `php -S 127.0.0.1:8181`
 * Abra localhost:8181 no browser
 # Bibliotecas
