@@ -16,4 +16,6 @@ require_once __DIR__ . '/config.php';
 // importando a tag html <head> globalmente
 require_once __DIR__ . '/head.php';
 
+// importando o menu global
+require_once __DIR__ . '/menu.php';
  ?>
