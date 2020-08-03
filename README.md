@@ -98,7 +98,13 @@ $entityManager->flush();
 
 echo "Produto com id " . $produto->id . "atualizado<br>";
 ```
-* Use o comando a seguir para criar no banco de dados as tabelas conforme documentacao e classes da pasta /src/
+* Use o comando a seguir para criar no banco de dados as tabelas conforme documentacao e classes da pasta /src/. A tabela usuario jah estah configurada.
+
+`vendor/bin/doctrine orm:schema-tool:create`
+* Para alterar uma tabela eh necessario excluir todas as tabelas . Lembre-se que todos os dados jah cadastrados serao perdidos , voce pode tentar fazer um dump e recuperar os dados :
+
+`vendor/bin/doctrine orm:schema-tool:drop --force`
+
 `vendor/bin/doctrine orm:schema-tool:create`
 # Menu
 O menu foi criado usando a biblioteca spatie/menu que
