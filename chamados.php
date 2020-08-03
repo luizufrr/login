@@ -1,17 +1,6 @@
 <?php
-
-$host = "localhost";
-$user = "root";
-$pass = "";
-$banco = "cmbv";
-$conexao = mysql_connect($host, $user, $pass) or die(mysql_error());
-mysql_select_db($banco) or die(mysql_error());
-
-?>
-
-<?php
-
 session_start();
+
 if((!isset ($_SESSION['email']) == true) and (!isset ($_SESSION['senha']) == true))
 {
   unset($_SESSION['email']);

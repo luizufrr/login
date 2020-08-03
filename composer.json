@@ -1,5 +1,6 @@
 {
     "require": {
-        "spatie/menu": "^2.8"
+        "spatie/menu": "^2.8",
+        "doctrine/orm": "^2.7"
     }
 }

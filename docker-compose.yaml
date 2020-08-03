@@ -3,12 +3,28 @@ services:
   web:
     build: .
     ports:
-      - "8080:80/tcp"
+      - 8080:80/tcp
+    expose:
+      - 80
     volumes:
       - .:/var/www/html
+    environment:
+      - DOCKER=1
 #    command: tail -f /dev/null
   mysql:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-    command: tail -f /dev/null
+      MYSQL_DATABASE: cmbv
+    #volumes:
+      #- ./mysql:/var/lib/mysql
+    #command: tail -f /dev/null
+    #ports:
+      #- 127.0.0.1:3306:3306
+      #- 127.0.0.1:33060:33060
+    #expose:
+      #- 3306
+      #- 33060
+#volumes:
+  #mysql_data:
+    #driver: local
