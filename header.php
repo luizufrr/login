@@ -5,4 +5,7 @@
  * O que serah usado nos arquivos php
  */
 
+// carregando as bibliotecas importadas pelo composer
+require __DIR__ . '/vendor/autoload.php';
+
  ?>
