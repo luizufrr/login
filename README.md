@@ -7,6 +7,7 @@ As bibliotecas importadas pelo composer ficam em /vendor/ .
 Novas bibliotecas que podem ser instaladas pelo composer
 para facilitar a codificacao podem ser encontradas em :
 * https://packagist.org/explore/
+
 E geralmente podem ser instaldas como :
 ```
 composer require autor/biblioteca
