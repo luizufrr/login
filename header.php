@@ -11,7 +11,7 @@ require __DIR__ . '/vendor/autoload.php';
 // carregando arquivos de configuracoes
 //contem as configuracoes do banco de dados
 //...globalmente para todo o projeto
-require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/conbanco.php';
 
 // importando a tag html <head> globalmente
 require_once __DIR__ . '/head.php';
