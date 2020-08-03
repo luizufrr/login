@@ -69,6 +69,7 @@ namespace Spatie\Menu;
 A documentacao para utilizar o Spatie pode ser encontrada em :
 * https://packagist.org/packages/spatie/menu
 * https://docs.spatie.be/menu/v2/introduction/
+* https://docs.spatie.be/menu/v2/examples/bootstrap-menu/ (Spatie e Bootstrap)
 # Menu
 O menu foi criado usando a biblioteca spatie/menu que
 cria o menu como se fosse uma lista utilizando as tags
