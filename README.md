@@ -1,6 +1,51 @@
 # login
 # Como iniciar / Get Started
-`compose install`
+Siga esses passos e aplique os comandos
+## Docker
+* Instale o Docker e o Docker-Compose
+* Clone esse repositorio em algum lugar do sistema
+* Va para o repositorio clonado
+* Inicie o terminal
+* `docker-compose up --build -d`
+* Edite os arquivos que se refletiram automaticamente no servidor criado do Docker
+* Abra localhost:8080 no browser
+## Linux
+### Debian
+* Abra o terminal (http://wiki.nosdigitais.teia.org.br/Terminal_de_Comandos_-_Shell_Linux)
+* `sudo apt update`
+* `sudo apt install -y git php unzip`
+* `mkdir ~/github`
+* `mkdir ~/github/luizufrr`
+* `cd ~/github/luizufrr`
+* `git clone https://github.com/luizufrr/login.git`
+* `php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
+* `php composer-setup.php --install-dir=/usr/bin --filename=composer`
+* `cd login`
+* `compose install`
+* `php -S 127.0.0.1:8181`
+* Abra localhost:8181 no browser
+### Windows
+* Abra o Power Shell no modo administrador
+  * Abra o Power Shell (https://pt.wikihow.com/Executar-o-Powershell)
+  * `Start-Process powershell -Verb runAs` (https://www.it-swarm.dev/pt/powershell/powershell-executando-um-comando-como-administrador/939774586/)
+* `Set-ExecutionPolicy Bypass -Scope Process`
+* Instale Chocolatey para instalar git, php, composer
+  * `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))` (https://chocolatey.org/install)
+* Instale o git (https://git-scm.com/downloads)
+  * `choco install git`
+* Instale o php
+* `cd C:`
+* `mkdir github`
+* `cd github`
+* `mkdir luizufrr`
+* `cd luizufrr`
+* `git clone https://github.com/luizufrr/login.git`
+* `cd login`
+* `php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"`
+* `php composer-setup.php --install-dir=/usr/bin --filename=composer`
+* `compose install`
+* `php -S 127.0.0.1:8181`
+* Abra localhost:8181 no browser
 # Bibliotecas
 As bibliotecas importadas pelo composer ficam em /vendor/ .
 
