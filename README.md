@@ -34,7 +34,7 @@ Windows :
 * `compose install`
 * `php -S 127.0.0.1:8181`
 * Abra localhost:8181 no browser
-### Windows
+## Windows
 * Abra o Power Shell no modo administrador
   * Abra o Power Shell (https://pt.wikihow.com/Executar-o-Powershell)
   * `Start-Process powershell -Verb runAs` (https://www.it-swarm.dev/pt/powershell/powershell-executando-um-comando-como-administrador/939774586/)
